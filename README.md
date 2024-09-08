@@ -1,5 +1,5 @@
 Aplicação: Enciclopédia dos Gigantes do Fisiculturismo
-O que faz essa aplicação?
+##O que faz essa aplicação?
 
 Essa aplicação web te permite explorar o mundo do fisiculturismo de forma fácil e divertida.
 
