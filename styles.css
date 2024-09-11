@@ -184,7 +184,11 @@ footer {
         body {
             background-image: url(fundoarnoldmedia.jpg);
             background-size: cover;
-        }
+            font-size: 16px;
+            }
+             .container {
+                width: 100%;
+          }
     }
 
 
