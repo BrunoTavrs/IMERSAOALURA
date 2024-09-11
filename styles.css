@@ -120,7 +120,7 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    /* background-color: #F5F7F8; Cor de fundo do rodapé */
+    background-color: rgba(108, 108, 110, 0.7); /* Deixa a cor de fundo com 70% de opacidade */
     color: white; /* Cor do texto */
     text-align: center; /* Alinha o texto ao centro */
     padding: 0; /* Espaçamento interno */
