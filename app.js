@@ -6,10 +6,10 @@ function pesquisar() {
     console.log(campoPesquisa);
 
     // se campoPesquisa for uma string sem nada
-    if (campoPesquisa == "") {
-        section.innerHTML = "<p>Nada foi encontrado. Digite o nome de um alteta ou algo realcionado.</p>"
-        return
-    }
+    // if (campoPesquisa == "") {
+    //     section.innerHTML = "<p>Nada foi encontrado. Digite o nome de um alteta ou algo realcionado.</p>"
+    //     return
+    // }
 
     campoPesquisa = campoPesquisa.toLowerCase()
 
