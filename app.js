@@ -6,8 +6,8 @@ function pesquisar() {
     console.log(campoPesquisa);
 
     // se campoPesquisa for uma string sem nada
-    if (campoPesquisa == "")  {
-        section.innerHTML = "<p>Nada foi encontrado. Precisa digitar o nome do atleta ou algo realcionado.</p>"
+    if (campoPesquisa == "") {
+        section.innerHTML = "<p>Nada foi encontrado. Digite o nome de um alteta ou algo realcionado.</p>"
         return
     }
 
@@ -16,20 +16,22 @@ function pesquisar() {
     // Inicializa uma string vazia para armazenar os resultados da pesquisa
     let resultados = "";
     let titulo = "";
-    let descricao= "";
-    let tags= "";
+    let descricao = "";
+    let tags = "";
 
     // Itera sobre cada dado na lista de dados (assumindo que 'dados' é um array de objetos)
     for (let dado of dados) {
         titulo = dado.titulo.toLowerCase();
         descricao = dado.descricao.toLowerCase();
         tags = dado.tags.toLowerCase();
+
         //se no titulo include campoPesquisa
         //então faça...
         if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
             //cria um novo elemento
             resultados += `
             <div class="item-resultado">
+                <img src="${dado.foto}" alt="${dado.titulo}">
                 <h2>
                     <a href="${dado.instagram}" target="_blank">${dado.titulo}</a>
                 </h2>
@@ -39,12 +41,12 @@ function pesquisar() {
             `;
         }
 
-
     }
 
     if (!resultados) {
         resultados = "<p>Nada foi encontrado</p>"
     }
+
 
     // Atribui o HTML gerado à seção de resultados
     section.innerHTML = resultados;
