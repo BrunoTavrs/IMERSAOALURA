@@ -5,7 +5,7 @@
 body {
     font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
     /* background-color: #DDDDDD; Cor de fundo da página */
-    background-image: url(fundoarnold.jpg);
+    background-image: url(imagens/fundoarnold.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -180,12 +180,11 @@ footer {
     footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
-     @media (max-width: 768px) {
+
+    @media (max-width: 768px) {
         body {
-            background-image: url(fundoarnoldmedia.jpg);
+            background-image: url(imagens/fundoarnoldmedia.jpg);
             background-size: cover;
-            }
+        }
     }
-
-
 }
