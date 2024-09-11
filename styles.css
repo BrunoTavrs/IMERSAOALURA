@@ -183,7 +183,7 @@ footer {
      @media (max-width: 768px) {
         body {
             background-image: url(fundoarnoldmedia.jpg);
-            background-size: contain;
+            background-size: cover;
         }
     }
 
