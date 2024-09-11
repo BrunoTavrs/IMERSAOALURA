@@ -180,6 +180,12 @@ footer {
     footer {
         font-size: 0.9rem; /* Tamanho da fonte do rodapé em telas pequenas */
     }
+     @media (max-width: 768px) {
+        body {
+            background-image: url(fundoarnoldmedia.jpg);
+            background-size: contain;
+        }
+    }
 
 
 }
